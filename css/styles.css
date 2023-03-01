@@ -232,7 +232,7 @@ body {
 		font-weight: 800;
 	}
 
-	#summary #numbers {
+	#summary .numbers {
 		padding: 10px;
 		text-align: right;
 		position: absolute;
@@ -504,7 +504,7 @@ body {
 		font-weight: 800;
 	}
 
-	#summary #numbers {
+	#summary .numbers {
 		padding: 10px;
 		text-align: right;
 		position: absolute;
