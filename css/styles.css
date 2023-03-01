@@ -6,6 +6,267 @@ body {
 	color: hsl(0, 0%, 100%); /*white*/
 }
 
+/*****BASE STYLE*****/
+#result {
+		padding: 20px;
+		padding-bottom: 70px;
+		width: 100%;
+		height: 40%;
+		border-bottom-right-radius: 30px;
+		border-bottom-left-radius: 30px;
+		background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsl(234, 85%, 45%)); /*cobalt-blue primary*/
+		position: relative;
+		z-index: 1;
+		box-shadow: -5px 5px 20px -15px hsl(224, 30%, 27%); /*dark gray blue*/
+	}
+
+	#result h1, #result .circle, #result p, #result span {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#result h1 {
+		margin-bottom: 30px;
+		font-size: 1em;
+		font-weight: lighter;
+		text-align: center;
+	}
+
+	#result .circle {
+		margin: auto;
+		border-radius: 50%;
+		width: 150px;
+		height: 150px;
+		background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsl(241, 81%, 54%));
+		position: relative;
+
+	}
+
+	#result .circle p {
+		position: absolute;
+		top: 110px;
+		//margin-left: auto;
+		//margin-right: auto;
+		font-size: 3em;
+		font-weight: bold;
+		margin-top: -80px;
+	}
+
+	#result .circle span {
+		position: absolute;
+		top: 100px;
+	}
+
+	#result .circle + p {
+		font-size: 1.5em;
+		font-weight: bold;
+	}
+	#result > span {
+		text-align: center;
+		margin-bottom: 30px;
+		width: 70%;
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	#summary {
+		padding: 25px;
+		width: 100%;
+		height: 650px;
+		background-color: hsl(0, 0%, 100%);
+		color: hsl(224, 30%, 27%); /*dark gray blue*/
+		position: relative;
+	}
+
+	#summary h2 {
+		margin-top: 10px;
+		margin-bottom: 30px;
+		font-size: 1.2em;
+	}
+
+	#summary .rectangle-reaction {
+		background-color: hsl(0, 100%, 97%); /*very light red*/
+		height: 50px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		border-radius: 10px;
+		display: flex;
+		align-items: center;
+		margin-bottom: 20px;
+		position: relative;
+	}
+
+	#summary .rectangle-reaction > span {
+		padding-left: 15px;
+		color: hsl(0, 100%, 67%); /*light red*/
+		
+	}
+
+	#summary .rectangle-reaction img {
+		vertical-align: middle;
+		padding-right: 10px;
+	}
+
+	#summary .rectangle-reaction span + span {
+		padding-left: 215px;
+		color: hsl(224, 30%, 27%); /*dark gray blue*/
+		text-align: right;
+	}
+
+	#summary .rectangle-reaction span + span > b {
+		padding-right: 10px;
+		font-weight: 800;
+	}
+
+
+
+	#summary .rectangle-memory {
+		background-color: hsl(39, 100%, 90%); /*very light orangey yellow*/
+		height: 50px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		border-radius: 10px;
+		display: flex;
+		align-items: center;
+		margin-bottom: 20px;
+		position: relative;
+	}
+
+	#summary .rectangle-memory > span {
+		padding-left: 15px;
+		color: hsl(39, 100%, 56%); /*orangey yellow*/
+		
+	}
+
+	#summary .rectangle-memory img {
+		vertical-align: middle;
+		padding-right: 10px;
+	}
+
+	#summary .rectangle-memory span + span {
+		padding-left: 215px;
+		color: hsl(224, 30%, 27%); /*dark gray blue*/
+		text-align: right;
+	}
+
+	#summary .rectangle-memory span + span > b {
+		padding-right: 10px;
+		font-weight: 800;
+	}
+
+
+	#summary .rectangle-verbal {
+		background-color: hsl(166, 100%, 95%); /*very green teal*/
+		height: 50px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		border-radius: 10px;
+		display: flex;
+		align-items: center;
+		margin-bottom: 20px;
+		position: relative;
+	}
+
+	#summary .rectangle-verbal > span {
+		padding-left: 15px;
+		color: hsl(166, 100%, 37%); /*green teal*/
+		
+	}
+
+	#summary .rectangle-verbal img {
+		vertical-align: middle;
+		padding-right: 10px;
+	}
+
+	#summary .rectangle-verbal span + span {
+		padding-left: 215px;
+		color: hsl(224, 30%, 27%); /*dark gray blue*/
+		text-align: right;
+	}
+
+	#summary .rectangle-verbal span + span > b {
+		padding-right: 10px;
+		font-weight: 800;
+	}
+
+
+	#summary .rectangle-visual {
+		background-color: hsl(234, 85%, 95%); /*very light cobalt blue*/
+		height: 50px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		border-radius: 10px;
+		display: flex;
+		align-items: center;
+		margin-bottom: 20px;
+		position: relative;
+	}
+
+	#summary .rectangle-visual > span {
+		padding-left: 15px;
+		color: hsl(234, 85%, 45%); /*cobalt blue*/
+		
+	}
+
+	#summary .rectangle-visual img {
+		vertical-align: middle;
+		padding-right: 10px;
+	}
+
+	#summary .rectangle-visual span + span {
+		padding-left: 215px;
+		color: hsl(224, 30%, 27%); /*dark gray blue*/
+		text-align: right;
+	}
+
+	#summary .rectangle-visual span + span > b {
+		padding-right: 10px;
+		font-weight: 800;
+	}
+
+	#summary #numbers {
+		padding: 10px;
+		text-align: right;
+		position: absolute;
+		right: 15px;
+	}
+
+	div.button {
+		width: 90%;
+		height: 60px;
+		margin-top: 40px;
+		position: absolute;
+		background-color: hsl(224, 30%, 27%); /*dark gray blue*/
+		display: flex;
+		justify-content: center;
+		align-items: center
+		margin-left: auto;
+		margin-right: auto;
+		border-radius: 30px;
+
+	}
+
+	div.button p {
+		color: hsl(0, 0%, 100%); /*white*/
+		font-size: 1.2em;
+		font-weight: bold;
+		margin-top: auto;
+		margin-bottom: auto;
+	}
+
+	div.button:hover, div.button:active {
+		background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsl(234, 85%, 45%));
+	}
+
+
 /*****DESKTOP 1440px*****/
 @media (min-width: 1440px) {
 
@@ -16,6 +277,8 @@ body {
 
 	#result {
 		padding: 20px;
+		padding-top: 100px;
+		padding-bottom: 100px;
 		width: 35%;
 		height: 650px;
 		float: left;
@@ -34,6 +297,7 @@ body {
 
 	#result h1 {
 		margin-bottom: 50px;
+		font-size: 1.2em;
 	}
 
 	#result .circle {
@@ -41,7 +305,7 @@ body {
 		border-radius: 50%;
 		width: 250px;
 		height: 250px;
-		background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+		background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsl(241, 81%, 54%));
 		position: relative;
 
 	}
@@ -78,6 +342,8 @@ body {
 
 	#summary {
 		padding: 25px;
+		padding-top: 100px;
+		padding-bottom: 100px;
 		width: 50%;
 		height: 650px;
 		margin-left: 350px;
@@ -104,6 +370,7 @@ body {
 		display: flex;
 		align-items: center;
 		margin-bottom: 15px;
+		position: relative;
 	}
 
 	#summary .rectangle-reaction > span {
@@ -140,6 +407,7 @@ body {
 		display: flex;
 		align-items: center;
 		margin-bottom: 15px;
+		position: relative;
 	}
 
 	#summary .rectangle-memory > span {
@@ -175,6 +443,7 @@ body {
 		display: flex;
 		align-items: center;
 		margin-bottom: 15px;
+		position: relative;
 	}
 
 	#summary .rectangle-verbal > span {
@@ -210,6 +479,7 @@ body {
 		display: flex;
 		align-items: center;
 		margin-bottom: 15px;
+		position: relative;
 	}
 
 	#summary .rectangle-visual > span {
@@ -232,6 +502,13 @@ body {
 	#summary .rectangle-visual span + span > b {
 		padding-right: 10px;
 		font-weight: 800;
+	}
+
+	#summary #numbers {
+		padding: 10px;
+		text-align: right;
+		position: absolute;
+		right: 15px;
 	}
 
 	div.button {
@@ -265,75 +542,22 @@ body {
 
 /*****MOBILE 375px*****/
 
-@media (min-width: 375px) and (max-width: 1439px) {
+@media (min-width: 375px) and (max-width: 767px) {
 	.container{
 	width: 100%;
 	}
 
-	#result {
-		padding: 20px;
-		width: 100%;
-		height: 40%;
-		border-bottom-right-radius: 30px;
-		border-bottom-left-radius: 30px;
-		background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsl(234, 85%, 45%)); /*cobalt-blue primary*/
-		position: relative;
-		z-index: 1;
-		box-shadow: -5px 5px 30px -15px hsl(224, 30%, 27%); /*dark gray blue*/
+	
+}
+
+/*****TABLET 768px*****/
+
+@media (min-width: 768px) and (max-width: 1439px) {
+	.container{
+	width: 50%;
+	margin-right: auto;
+	margin-left: auto;
 	}
 
-	#result h1, #result .circle, #result p, #result span {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-
-	#result h1 {
-		margin-bottom: 30px;
-		font-size: 1em;
-		font-weight: lighter;
-		text-align: center;
-	}
-
-	#result .circle {
-		margin: auto;
-		border-radius: 50%;
-		width: 150px;
-		height: 150px;
-		background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
-		position: relative;
-
-	}
-
-	#result .circle p {
-		position: absolute;
-		top: 110px;
-		//margin-left: auto;
-		//margin-right: auto;
-		font-size: 3em;
-		font-weight: bold;
-		margin-top: -80px;
-	}
-
-	#result .circle span {
-		position: absolute;
-		top: 100px;
-	}
-
-	#result .circle + p {
-		font-size: 1.5em;
-		font-weight: bold;
-	}
-	#result > span {
-		text-align: center;
-		margin-bottom: 30px;
-		width: 70%;
-		position: absolute;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		margin-right: auto;
-		margin-left: auto;
-
-	}
-
+	
 }
